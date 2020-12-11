@@ -94,7 +94,21 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let array = [];
+  arr.forEach((number) =>{
+    if(number % 3 === 0 ){
+      array.push ('fizz');
+
+    }else if(number % 5 === 0 ){
+      array.push('buzz');
+
+    }else if(number % 3 === 0 && number % ){
+      
+  })
+  return array;
 };
+
+console.log(arr);
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
