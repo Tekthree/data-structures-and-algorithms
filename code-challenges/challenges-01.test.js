@@ -96,19 +96,26 @@ const fizzbuzz = (arr) => {
   // Solution code here...
   let array = [];
   arr.forEach((number) =>{
-    if(number % 3 === 0 ){
-      array.push ('fizz');
 
-    }else if(number % 5 === 0 ){
-      array.push('buzz');
+    if(number % 3 === 0 && number < 14){
+      array.push ('Fizz');
 
-    }else if(number % 3 === 0 && number % ){
+    }else if(number % 5 === 0 && number < 14){
+      array.push('Buzz');
+
+    }else if(number % 3 === 0 && number % 5 === 0){
+      array.push('Fizz Buzz');
+
+    }else {
+      array.push(number);
+    }
       
-  })
+  });
+  console.log(array);
   return array;
 };
 
-console.log(arr);
+
 
 /* ------------------------------------------------------------------------------------------------
 TESTS
